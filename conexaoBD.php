@@ -1,9 +1,9 @@
 <?php
     try {        
         // conexão PDO    // IP, nomeBD, usuario, senha    
-        $db =  'mysql:host=143.106.241.3;dbname=cl202252;charset=utf8';
-        $user = 'cl202252';
-        $passwd = 'seinao';
+        $db =  'mysql:host=143.106.241.3;dbname=cl202230;charset=utf8';
+        $user = 'cl202230';
+        $passwd = 'NamesCode';
         $pdo = new PDO($db, $user, $passwd);
         
         // ativar o depurador de erros
@@ -12,4 +12,3 @@
         $output = 'Impossível conectar BD : ' . $e . '<br>';
         echo $output;
     }    
-?>

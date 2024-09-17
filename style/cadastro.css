@@ -123,5 +123,6 @@ input[type=submit]{
     border: 0px;
     color: rgb(20, 2, 26);
     font-weight: 700;
+    cursor: pointer;
 }
 
