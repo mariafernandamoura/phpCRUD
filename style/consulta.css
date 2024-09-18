@@ -31,10 +31,13 @@ header>img{
     width: 4%;
 }
 
+
+
 section{
     width: 35%;
     height: 70%;
     padding: 20px ;
+    overflow-y: scroll;
 
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.151);
@@ -47,23 +50,53 @@ section{
     flex-direction: column;
 }
 
-h2{
-    color: white;
+
+section::-webkit-scrollbar {
+    width: 0px;         
+    height: 100%;
+  }
+
+  section>a{
+    width: 100%;
+    display: flex;
+    justify-content: left;
 }
 
-#icon{
+#icon
+{
+    width: 5%;
+}
+
+
+h1{
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 2%;
+}
+
+h2{
+    color: white;
+    margin-top: 3%;
+}
+
+
+.div-form{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 form{
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 input{
-    width: 25%;
+    width: 20%;
     height: 13%;
 
     background-color: #ffffff0a;
@@ -106,18 +139,55 @@ input[type=submit]{
     margin-bottom: 2%;
     color: white;
 }
+.form-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
 .text-left{
     font-weight: 600;
 }
 
+.text-right{
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-right>input[type=submit]{
+    background-color: transparent;
+    padding: 0;
+    border: 0px;
+    margin: 0;
+    font-weight: 700;
+    cursor: pointer;
+    background-image: url(../assets/xmark-solid.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+}
+
+.input-item
+{
+    display: none;
+}
+
+.text-right>p{
+    text-wrap: nowrap;
+    margin-right: 10%;
+}
+
 .desc{
     color: rgb(233, 230, 230);
+    width: 100%;
     font-weight: 400;
     font-size: 0.9em;
 }
 
 .top{
+    width: 100%;
     display: flex;
     flex-direction: row;
 
