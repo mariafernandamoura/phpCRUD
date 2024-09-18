@@ -43,7 +43,12 @@ section{
     backdrop-filter: blur(5px);
 
     display: flex;
+    align-items: center;
     flex-direction: column;
+}
+
+h2{
+    color: white;
 }
 
 #icon{
@@ -95,3 +100,28 @@ input[type=submit]{
     font-weight: 700;
     cursor: pointer;
 }
+
+.item{
+    width: 80%;
+    margin-bottom: 2%;
+    color: white;
+}
+
+.text-left{
+    font-weight: 600;
+}
+
+.desc{
+    color: rgb(233, 230, 230);
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
