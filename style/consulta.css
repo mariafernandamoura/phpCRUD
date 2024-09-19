@@ -195,3 +195,7 @@ input[type=submit]{
     justify-content: space-between;
 }
 
+p
+{
+    color: white;
+}
